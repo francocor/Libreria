@@ -1,0 +1,166 @@
+{
+  "Libros": [
+    {
+      "titulo": "Harry potter",
+      "autor": "J.K. Rolling",
+      "genero": "Ciencia ficcion y Fantasia",
+      "id": 1
+    },
+    {
+      "titulo": "IT",
+      "autor": "Stephen King",
+      "genero": "Terror",
+      "id": 2
+    },
+    {
+      "titulo": "El señor de los Anillos",
+      "autor": "J.R. Tolkien",
+      "genero": "Ciencia ficcion y Fantasia",
+      "id": 3
+    }
+  ],
+  "Alumnos": [
+    {
+      "nombre": "diego",
+      "dni": "38340246",
+      "direccion": "alderete 420",
+      "institucion": "UTN-FRT",
+      "id": 1
+    },
+    {
+      "nombre": "María Victoria Abraham ",
+      "dni": "43962609",
+      "direccion": "ajbhv",
+      "institucion": "UTN-FRT",
+      "id": 4
+    },
+    {
+      "nombre": "diego",
+      "dni": "38340246",
+      "direccion": "alderete 420",
+      "institucion": "UTN-FRT",
+      "id": 3
+    },
+    {
+      "nombre": "Chiquito Abraham",
+      "dni": "12345678",
+      "direccion": "alsina",
+      "institucion": "UNSTA",
+      "id": 5
+    },
+    {
+      "nombre": "Franco Cornejo",
+      "dni": "39356232",
+      "direccion": "san juan 27",
+      "institucion": "UTN-FRT",
+      "id": 6
+    }
+  ],
+  "Permisos": [
+    {
+      "fechaPrestamo": "2022-11-17",
+      "fechaDevolución": "2022-11-02",
+      "idAlumnos": 3,
+      "idLibros": 2,
+      "id": 2
+    },
+    {
+      "fechaPrestamo": "2022-11-17",
+      "fechaDevolución": "2022-12-30",
+      "idAlumnos": 3,
+      "idLibros": 3,
+      "id": 3
+    },
+    {
+      "fechaPrestamo": "2022-11-09",
+      "fechaDevolución": "2022/10/22",
+      "idAlumnos": 1,
+      "idLibros": 2,
+      "id": 20
+    },
+    {
+      "fechaPrestamo": "2022-11-02",
+      "fechaDevolución": "2022/12/30",
+      "idAlumnos": 1,
+      "idLibros": 1,
+      "id": 21
+    },
+    {
+      "fechaPrestamo": "2022-11-18",
+      "fechaDevolución": "2022/12/30",
+      "idAlumnos": 1,
+      "idLibros": 1,
+      "id": 22
+    },
+    {
+      "fechaPrestamo": "2022-11-15",
+      "fechaDevolución": "2022/12/30",
+      "idAlumnos": 4,
+      "idLibros": 0,
+      "id": 23
+    },
+    {
+      "fechaPrestamo": "2022-11-16",
+      "fechaDevolución": "2022/12/30",
+      "idAlumnos": 1,
+      "idLibros": 3,
+      "id": 24
+    },
+    {
+      "fechaPrestamo": "2022-11-16",
+      "fechaDevolución": "2022/12/30",
+      "idAlumnos": 1,
+      "idLibros": 3,
+      "id": 25
+    },
+    {
+      "fechaPrestamo": "2022-11-16",
+      "fechaDevolución": "2022/12/30",
+      "idAlumnos": 4,
+      "idLibros": 2,
+      "id": 26
+    },
+    {
+      "fechaPrestamo": "2022-11-18",
+      "fechaDevolución": "",
+      "idAlumnos": 1,
+      "idLibros": 2,
+      "id": 27
+    },
+    {
+      "fechaPrestamo": "2022-11-17",
+      "fechaDevolución": "",
+      "idAlumnos": 4,
+      "idLibros": 3,
+      "id": 28
+    },
+    {
+      "fechaPrestamo": "2023-01-19",
+      "fechaDevolución": "",
+      "idAlumnos": 5,
+      "idLibros": 3,
+      "id": 29
+    },
+    {
+      "fechaPrestamo": "2023-02-16",
+      "fechaDevolución": "2022-11-10",
+      "idAlumnos": 5,
+      "idLibros": 1,
+      "id": 30
+    },
+    {
+      "fechaPrestamo": "2022-11-10",
+      "fechaDevolución": "2022-11-10",
+      "idAlumnos": 1,
+      "idLibros": 2,
+      "id": 31
+    },
+    {
+      "fechaPrestamo": "2022-11-10",
+      "fechaDevolución": "2022-11-10",
+      "idAlumnos": 3,
+      "idLibros": 2,
+      "id": 32
+    }
+  ]
+}
