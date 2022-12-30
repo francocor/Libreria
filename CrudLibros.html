@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="libros.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app1.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="imagenes/logo" alt="" class="logoimg">
+            </div>
+            <div class="titulo">
+                <div>CONEXION LECTORA</div>
+                <div>CONEXION LECTORA</div>
+            </div>
+            <div id="barraMenu">
+                <ul>
+                    <li>
+                        <a href="index.html">Pagina Principal</a>
+                    </li>
+                    <li>
+                        <a href="CrudAlumnos.html">Alumnos</a>
+                    </li>
+                    <li>
+                        <div class="btn-group dropdown">
+                            <button 
+                            class="btn  dropdown-toggle"
+                            type="button"
+                            id="dropdown1"
+                            data-bs-toggle="dropdown"
+                            >
+                            PRESTAMOS
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" target="_blank" href="registro.html">Registrar Prestamos</a>
+                            <a class="dropdown-item" target="_blank" href="reporte.html">Reportes</a>
+                        </div>
+                        </nav>
+                        </div>
+                     </li>
+                </ul>
+            </div> 
+        </header>
+        <main>
+            <!-- APP 1 -->
+            <h3 >Registro de libros:</h3>
+            <br>
+            <label for="titulo">TITULO</label>
+            <input type="text" id="titulo" placeholder="Nombre del ejemplar">
+            <label for="autor">AUTOR</label>
+            <input type="text" id="autor" placeholder="Nombre del autor">
+            <label for="genero">GENERO</label>
+            <select name="genero" id="genero">
+                <option value="Terror">Terror </option>
+                <option value="Romance">Romance</option>
+                <option value="Ciencia ficcion y Fantasia">Ciencia Ficcion y Fantasia</option>
+                <option value="Politica y economia">Politica y Economia</option>
+            </select>
+            <button id="grd" class="btn btn-light" onclick="guardar()"> Guardar</button>
+            <button id="act" class="btn btn-warning" onclick="actualizar()"> Actualizar</button>
+            <hr>
+            <div id="list"></div>
+            <br>
+            <br>  
+        </main>
+        
+        <footer>
+
+        </footer>
+        
+    </div>
+    
+
+</body>
+</html>

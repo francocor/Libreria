@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app4.js" defer></script>
+    <link rel="stylesheet" href="reporte.css">
+    <title>Reportes</title>
+</head>
+<body>  
+    <div class="conteiner">
+        <header>
+            <div class="logo">
+                <img src="imagenes/logo" alt="" class="logoimg">
+            </div>
+            <div class="titulo">
+               <div>CONEXION LECTORA</div>
+               <div>CONEXION LECTORA</div>
+            </div>
+            <div id="barraMenu">
+               <ul>
+                <li>
+                    <a href="index.html">Pagina principal</a>
+                </li>
+                <li>
+                    <a href="CrudLibros.html">Libros</a>
+                </li>
+                <li>
+                   <a href="CrudAlumnos.html">Alumnos</a>
+                </li>
+                <li>
+                   <div class="btn-group dropdown">
+                       <button 
+                         class="btn  dropdown-toggle"
+                         type="button"
+                         id="dropdown1"
+                         data-bs-toggle="dropdown"
+                       >
+                         Prestamos
+                       </button>
+                       <div class="dropdown-menu">
+                         <a class="dropdown-item" target="_blank" href="registro.html">Registrar Prestamos</a>
+                         <a class="dropdown-item" target="_blank" href="reporte.html">Reportes</a>
+                       </div>
+                     </nav>
+                    </div>
+               </li>
+               </ul>
+            </div> 
+        </header>
+
+        <main>
+            <div class="tabla">
+                <H1>Libros Prestados</H1>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Titulo del libro </th>
+                                <th>Alumno</th>
+                                <th>Fecha de prestamo</th>
+                                <th>Direccion</th>
+                                <th>Institucion</th>
+                                <th>Disponibilidad</th>
+                            </tr>
+                        </thead>
+                        <tbody  id="prestadosTotal">
+                          
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div class="tabla">
+                <H1>Libros NO Devueltos</H1>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> </th>
+                                <th>fecha de prestamo </th>
+                                <th>libro</th>
+                                <th>titulo de libro</th>
+                                <th>alumno</th>
+                                <th>institucion</th>
+                            </tr>
+                        </thead>
+                        <tbody  id="prestados">
+                          
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div class="tabla">
+                <H1>Libros Devueltos</H1>
+                
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>fecha de prestamo</th>
+                                <th>fecha de devolucion</th>
+                                <th>libro</th>
+                            </tr>
+                        </thead>
+                        <tbody id="devueltos">
+                          
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
